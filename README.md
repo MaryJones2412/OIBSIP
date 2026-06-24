@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 CodeMaster Academy Landing Page
 
@@ -42,6 +42,4 @@ Future Enhancements
 - Integrate a contact form.
 - Add animations and hover effects.
 - Connect to a backend for user registration.
-=======
-# OIBSIP
->>>>>>> a269da5a73e124422ddc98c816bb276ef5de4e1f
+
