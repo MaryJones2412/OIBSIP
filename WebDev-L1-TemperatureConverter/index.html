@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="header">
+
+            <i class="fas fa-temperature-high icon"></i>
+
+            <h1>Temperature Converter</h1>
+
+            <p>
+                Convert temperatures instantly between
+                Celsius, Fahrenheit and Kelvin.
+            </p>
+
+        </div>
+
+        <div class="input-section">
+
+            <label>Enter Temperature</label>
+
+            <input
+                type="number"
+                id="temperature"
+                placeholder="Enter temperature">
+
+            <label>Select Unit</label>
+
+            <select id="unit">
+
+                <option value="celsius">Celsius (°C)</option>
+
+                <option value="fahrenheit">Fahrenheit (°F)</option>
+
+                <option value="kelvin">Kelvin (K)</option>
+
+            </select>
+
+        </div>
+
+        <div class="buttons">
+
+            <button onclick="convertTemperature()">
+
+                <i class="fas fa-sync-alt"></i>
+
+                Convert
+
+            </button>
+
+            <button class="reset" onclick="resetFields()">
+
+                <i class="fas fa-rotate-left"></i>
+
+                Reset
+
+            </button>
+
+        </div>
+
+        <div id="error" class="error"></div>
+
+        <div class="results">
+
+            <div class="result-card">
+
+                <h3>Celsius</h3>
+
+                <p id="celsiusResult">-- °C</p>
+
+            </div>
+
+            <div class="result-card">
+
+                <h3>Fahrenheit</h3>
+
+                <p id="fahrenheitResult">-- °F</p>
+
+            </div>
+
+            <div class="result-card">
+
+                <h3>Kelvin</h3>
+
+                <p id="kelvinResult">-- K</p>
+
+            </div>
+
+        </div>
+
+        <footer>
+
+            <p>
+                Designed & Developed by <strong>Mary Jones</strong>
+            </p>
+
+        </footer>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
